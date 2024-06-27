@@ -1,0 +1,251 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* YELLOW hamburguesa */
+.container__yellow{
+  background-color: rgb(251, 251, 113);
+  display: flex;
+  flex-direction: row-reverse;
+  position: relative;
+}
+.equal__yellow{
+  font-size: xx-large;
+  font-weight: bolder;
+  cursor: pointer;
+  margin: 10px;
+}
+#boton__yellow{
+  display: none;
+}
+.hambur__yellow{
+  display: none;
+  li{
+    list-style: none;
+    padding: 15px;
+    a{
+      text-decoration: none;
+      color: black;
+      font-weight: bolder;
+    }
+  }
+}
+#boton__yellow:checked ~ .hambur__yellow{
+  display: block;
+  position: absolute;
+  background-color: rgb(250, 250, 5);
+  top: 100%;
+}
+/* PURPLE dropwdown */
+.purple__container{
+  margin-top: 100px;
+  background-color: rgb(235, 178, 235);
+}
+.purple__menu{
+  display: flex;
+  li{
+    list-style: none;
+    padding: 15px;
+    position: relative;
+    a{
+      text-decoration: none;
+      color: black;
+      font-weight: bolder;
+    }
+  }
+}
+.purple__menu li:hover{
+  background-color: rgb(196, 147, 196);
+}
+.dropdown__purple{
+  display: none;
+}
+.purple__menu li:hover .dropdown__purple{
+  display: block;
+  position: absolute;
+  background-color: blueviolet;
+  top: 100%;
+  left: 0;
+  font-size: 13px;
+  z-index: 2;
+}
+/* BLUE hamburguesa */
+.blue__container{
+  margin-top: 100px;
+  background-color: lightblue;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.blue__equal{
+  font-size: 50px;
+  font-weight: bolder;
+  cursor: pointer;
+}
+#blue-link{
+  display: none;
+}
+.blue_hambu{
+  background-color: rgb(109, 158, 174);
+  display: none;
+  li{
+    padding: 15px;
+    list-style: none;
+    a{
+      text-decoration: none;
+      color: black;
+    }
+  }
+}
+#blue-link:checked ~ .blue_hambu{
+  display: block;
+  position: absolute;
+  top: 100%;
+}
+.blue_hambu li:hover{
+  background-color: lightblue;
+}
+/* BROWN dropdown */
+.brown__container{
+  margin-top: 100px;
+  background-color: rgb(168, 137, 102);
+}
+.brown__menu{
+  display: flex;
+  li{
+    padding: 15px;
+    list-style: none;
+    position: relative;
+    a{
+      text-decoration: none;
+      color: aliceblue;
+      font-weight: bolder;
+    }
+  }
+}
+.brown__menu li:hover{
+  background-color: rgb(114, 93, 69);
+}
+.brown__dropdown{
+  display: none;
+  position: absolute;
+}
+.brown__menu li:hover .brown__dropdown{
+  display: block;
+  background-color: rgb(168, 133, 69);
+  top: 100%;
+  left: 0;
+  width: 100%;
+  justify-content: center;
+}
+
+/* ORANGE hambu */
+.orange__container{
+  margin-top: 100px;
+  background-color: rgb(255, 204, 109);
+  display: flex;
+  flex-direction: row-reverse;
+  position: relative;
+}
+.equal-orange{
+  font-size: 50px;
+  font-weight: bolder;
+  cursor: pointer;
+}
+#orange__boton{
+  display: none;
+}
+.orange__menu{
+  background-color: rgb(243, 176, 52);
+  display: none;
+  position: absolute;
+  background-color: rgb(243, 176, 52);
+  li{
+    list-style: none;
+    padding: 15px;
+    a{
+      text-decoration: none;
+      color: rgb(0, 0, 0);
+      font-weight: bolder;
+    }
+  }
+}
+.orange__menu li:hover{
+  background-color: rgb(255, 218, 151);
+}
+#orange__boton:checked ~ .orange__menu{
+  display: block;
+  top: 100%;
+}
+/* RED dropdown */
+.red__container{
+  margin-top: 100px;
+  background-color: rgb(255, 60, 60);
+}
+.red__menu{
+  display: flex;
+  justify-content: space-evenly;
+  li{
+    list-style: none;
+    padding: 15px;
+    position: relative;
+    a{
+      text-decoration: none;
+      color: aliceblue;
+      font-weight: bolder;
+    }
+  }
+}
+.red__menu li:hover{
+  background-color: rgb(253, 110, 110);
+}
+.red__dropdown{
+  display: none;
+}
+.red__menu li:hover .red__dropdown{
+  display: block;
+  position: absolute;
+  background-color: red;
+  top: 100%;
+  left: 0;
+  width: 100%;
+}
+.red__dropdown li{
+  display: flex;
+  justify-content: center;
+}
+/* Green hambu */
+.green__container{
+  margin-top: 100px;
+  background-color: rgb(150, 220, 150);
+  position: relative;
+}
+.equal-green{
+  font-size: 40px;
+  font-weight: bolder;
+  cursor: pointer;
+}
+#green__boton{
+  display: none;
+}
+.green__menu{
+  position: absolute;
+  background-color: rgb(110, 161, 110);
+  display: none;
+  li{
+    list-style: none;
+    padding: 15px;
+    a{
+      text-decoration: none;
+      color: aliceblue;
+      font-weight: bolder;
+    }
+  }
+}
+.green__menu li:hover{
+  background-color: rgb(150, 220, 150);
+}
+#green__boton:checked ~ .green__menu{
+  display: block;
+}
